@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+#myDIV {
+  width: 100%;
+  height: 100vh;
+  background-color: coral;
+  color: white;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding-top: 18%;
+}
+button{
+    height: 100px;
+    width: 100px;
+border-radius: 50px;
+
+z-index: 999;
+align-self: center;
+
+
+}
+#B1 {
+    background-color: grey;
+
+}
+#B2 {
+    background-color: white;
+}
+#B3 {
+    background-color:blue;
+}
+#B4 {
+    background-color: yellow;
+}
+p{
+    font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+
+
+<div id="myDIV">
+    <h1>Colour scheme switcher</h1>
+    <br/>
+<button id="B1" onclick="grey()"></button>
+<button id="B2" onclick="white()"></button>
+<button id="B3" onclick="blue()"></button>
+<button id="B4" onclick="yellow()"></button>
+<br/>
+<br/>
+<p>  Try clicking on one of the colors above   <br/>
+   to change the background color of this page !</p>
+  
+</div>
+
+<script>
+function white() {
+  document.getElementById("myDIV").style.backgroundColor = "white";
+  document.getElementById("myDIV").style.webkitTextFillColor = "black";
+  
+}
+function grey() {
+  document.getElementById("myDIV").style.backgroundColor = "grey";
+  document.getElementById("myDIV").style.webkitTextFillColor = "orange";
+  
+}
+function blue() {
+  document.getElementById("myDIV").style.backgroundColor = "blue";
+  document.getElementById("myDIV").style.webkitTextFillColor = "red";
+  
+}
+
+function yellow() {
+  document.getElementById("myDIV").style.backgroundColor = "yellow";
+  document.getElementById("myDIV").style.webkitTextFillColor = "green";
+  
+}
+</script>
+
+</body>
+</html>
